@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+# Utility script to automate python virtualenv creation/update from ./requirements.in 
+# Input:  ./requirements.in
+# Output: ./requirements.txt + ./venv/ + ./venv_windows/
+#
+# Redownload latest version of script:
+# wget https://raw.githubusercontent.com/JamesMcGuigan/requirements.sh/master/requirements.sh -O requirements.sh
+
 set -x
 cd $(dirname $(readlink -f ${BASH_SOURCE[0]}));  # OSX requires: brew install coreutils
 
